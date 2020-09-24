@@ -2,11 +2,13 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld :width='width' :height='height' msg="Welcome to Your Vue.js App" class="body"/>
+    <TransimitionTest></TransimitionTest>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import TransimitionTest from './components/TransimitionTest'
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
   };
 },
   components: {
-    HelloWorld
+    HelloWorld,
+    TransimitionTest
   },
   mounted(){
     window.onresize = () => {
